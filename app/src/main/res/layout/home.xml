@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:paddingTop="40dp"
+    android:paddingBottom="40dp"
+    tools:context=".HomePageActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@string/common_google_play_services_enable_title"
+        android:paddingBottom="30dp"
+        android:text="Speedclick"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#000000"
+        app:fontFamily="sans-serif-condensed-medium" />
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_weight="1" >
+    </Space>
+
+    <Button
+        android:id="@+id/playButton"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/play_button_style"
+        android:drawableLeft="@drawable/play_button"
+        android:fontFamily="sans-serif"
+        android:onClick="select"
+        android:padding="15dp"
+        android:text="Play"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"/>
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_weight="1" >
+    </Space>
+
+    <Button
+        android:id="@+id/highscoresButton"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/play_button_style"
+        android:fontFamily="sans-serif"
+        android:drawableLeft="@drawable/trophy_icon"
+        android:onClick="goHighscores"
+        android:padding="15dp"
+        android:text="Highscores"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp" />
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_weight="1" >
+    </Space>
+
+    <Button
+        android:id="@+id/helpButton"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/play_button_style"
+        android:fontFamily="sans-serif"
+        android:textColor="#FFFFFF"
+        android:padding="15dp"
+        android:drawableLeft="@drawable/globe_icon"
+        android:text="Online VS"
+        android:onClick="showOnline"/>
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_weight="1" >
+    </Space>
+
+    <Button
+        android:id="@+id/puzzleButton"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/play_button_style"
+        android:fontFamily="sans-serif"
+        android:textColor="#FFFFFF"
+        android:padding="15dp"
+        android:drawableLeft="@drawable/puzzle_icon"
+        android:text="Daily Puzzle"
+        android:onClick="showPuzzle"/>
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_weight="1" >
+    </Space>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="30dp">
+
+        <Button
+            android:id="@+id/profileButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/round_button"
+            android:drawableLeft="@drawable/user_icon"
+            android:fontFamily="sans-serif"
+            android:paddingLeft="10dp"
+            android:layout_marginRight="40dp"
+            android:onClick="showProfile"/>
+
+        <Button
+            android:id="@+id/settingsButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/round_button"
+            android:drawableLeft="@drawable/settings_icon"
+            android:fontFamily="sans-serif"
+            android:paddingLeft="10dp"
+            android:onClick="goSettings"/>
+
+    </LinearLayout>
+
+</LinearLayout>
