@@ -29,7 +29,8 @@ public class HomePageActivity extends AppCompatActivity {
         //deleteDatabase("appData");
         data = new LocalDatabase(this);
         data.addStatus();
-        if(data.getUsername() == "Invalid") {
+        data.addSavedStatus();
+        if(data.getUsername().equals("Invalid")) {
             Intent intent = new Intent(this, Tutorial.class);
             startActivity(intent);
         }
